@@ -2,12 +2,16 @@
     "name": "@nx-integrated-template/source",
     "version": "0.0.0",
     "license": "MIT",
-    "scripts": {},
+    "scripts": {
+        "dev:rest-api": "yarn nx serve rest-api",
+        "dev:svelte-app": "yarn nx run svelte-app:dev"
+    },
     "private": true,
     "workspaces": [
         "apps/*",
         "libs/*"
     ],
+    "packageManager": "yarn@1.22.19",
     "dependencies": {
         "axios": "^1.0.0",
         "express": "~4.18.1",
