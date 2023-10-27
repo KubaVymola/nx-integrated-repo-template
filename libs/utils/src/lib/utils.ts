@@ -4,7 +4,7 @@ export type RES_DATA = {
 };
 
 export const data: RES_DATA = {
-    message: 'test',
+    message: 'test 23',
     DATA: 'hi there',
 };
 

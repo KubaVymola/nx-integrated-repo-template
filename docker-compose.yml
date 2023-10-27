@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    db_dev:
+        image: postgres:alpine3.18
+        restart: always
+        environment:
+            - POSTGRES_USER=${DEV_DB_USER}
+            - POSTGRES_PASSWORD=dev
+            - POSTGRES_DB=dev
+        ports:
+            - 5432:5432
